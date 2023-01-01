@@ -1,3 +1,4 @@
+import { Link } from "@inertiajs/inertia-react";
 import PropTypes from "prop-types";
 
 FeaturedMovie.PropTypes = {
@@ -52,10 +53,10 @@ export default function FeaturedMovie ({
                                     />
                                 </div>
                             </div>
-                            <a
-                                href={slug}
+                            <Link
+                                href={route('prototype.movie.show', slug)}
                                 class="inset-0 absolute z-50"
-                            ></a>
+                            ></Link>
                         </div>
     );
 }

@@ -40,7 +40,7 @@ export default function Dashboard() {
                     ))}
                 </Flickity>
             </div>
-            <div classNameName="mt-[50px]">
+            <div className="mt-[50px]">
                     <div className="font-semibold text-[22px] text-black mb-4">Browse</div>
                     <Flickity className="gap-[30px]" options={flickityOptions}>
                        {[1, 2, 3, 4, 5, 6].map((i) => (

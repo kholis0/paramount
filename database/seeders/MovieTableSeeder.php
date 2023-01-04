@@ -21,8 +21,8 @@ class MovieTableSeeder extends Seeder
                 'slug' => 'The-chronicles-of-narnia',
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=JjUJj0_FC7k',
-                'thumbnail' => 'https://id.pinterest.com/pin/16607092365814371/',
-                'rating' => 9.0,
+                'thumbnail' => 'https://m.media-amazon.com/images/I/81sb-P-862L._AC_UY327_FMwebp_QL65_.jpg',
+                'rating' => 3.1,
                 'is_featured' => 1,
             ],
             [
@@ -30,8 +30,8 @@ class MovieTableSeeder extends Seeder
                 'slug' => 'Assassins-creed',
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=U6-3k94L2E8',
-                'thumbnail' => 'https://id.pinterest.com/pin/818810776019484449//',
-                'rating' => 9.5,
+                'thumbnail' => 'https://m.media-amazon.com/images/I/A1O6gjOk0qL._AC_UY327_FMwebp_QL65_.jpg',
+                'rating' => 4.4,
                 'is_featured' => 0,
             ],
             [
@@ -39,9 +39,9 @@ class MovieTableSeeder extends Seeder
                 'slug' => 'The-lone-ranger',
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=c74jMQSoTnk',
-                'thumbnail' => 'https://id.pinterest.com/pin/914441899313653450/',
-                'rating' => 9.3,
-                'is_featured' => 1,
+                'thumbnail' => 'https://m.media-amazon.com/images/I/A15LpQLg9iL._AC_UY327_FMwebp_QL65_.jpg',
+                'rating' => 3.2,
+                'is_featured' => 2,
             ]
         ];
         Movie::insert($movies);

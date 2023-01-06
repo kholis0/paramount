@@ -20,7 +20,7 @@ class MovieTableSeeder extends Seeder
                 'name' => 'The Chronicles Of Narnia',
                 'slug' => 'The-chronicles-of-narnia',
                 'category' => 'Action',
-                'video_url' => 'https://www.youtube.com/watch?v=XJBmRTkugIY',
+                'video_url' => 'https://www.youtube.com/watch?v=ViQyQPuFs1s',
                 'thumbnail' => 'https://m.media-amazon.com/images/I/81sb-P-862L._AC_UY327_FMwebp_QL65_.jpg',
                 'rating' => 3.1,
                 'is_featured' => 1,

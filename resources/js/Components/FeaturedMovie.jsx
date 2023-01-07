@@ -1,12 +1,12 @@
 import { Link } from "@inertiajs/inertia-react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
-FeaturedMovie.PropTypes = {
-    slug: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-    thumbnail: PropTypes.string.isRequired,
-    rating: PropTypes.number,
+FeaturedMovie.propTypes = {
+    slug: propTypes.string.isRequired,
+    name: propTypes.string.isRequired,
+    category: propTypes.string.isRequired,
+    thumbnail: propTypes.string.isRequired,
+    rating: propTypes.number,
 }
 export default function FeaturedMovie ({
     slug,
@@ -16,36 +16,36 @@ export default function FeaturedMovie ({
     rating = 0,
 }) {
     return(
-        <div class="absolute overflow-hidden group mr-[30px]">
+        <div className="absolute overflow-hidden group mr-[30px]">
                             {/* <!-- Movie Thumbnail --> */}
                             <img
                                 src={thumbnail}
-                                class="object-cover rounded-[30px] w-[520px] h-[340px]"
+                                className="object-cover rounded-[30px] w-[520px] h-[340px]"
                                 alt=""
                             />
                             {/* <!-- rating --> */}
-                            <div class="rating absolute top-0 left-0">
-                                <div class="p-[30px] flex items-center gap-1">
+                            <div className="rating absolute top-0 left-0">
+                                <div className="p-[30px] flex items-center gap-1">
                                     <img src="/icons/ic_star.svg" alt="" />
-                                    <span class="text-sm font-medium text-white mt-1">
+                                    <span className="text-sm font-medium text-white mt-1">
                                         {rating.toFixed(1)}/5.0
                                     </span>
                                 </div>
                             </div>
                             {/* <!-- bottom detail --> */}
                             <div
-                                class="absolute bottom-0 h-[100px] left-0 right-0 bg-gradient-to-t from-black rounded-bl-[28px]
+                                className="absolute bottom-0 h-[100px] left-0 right-0 bg-gradient-to-t from-black rounded-bl-[28px]
                             rounded-br-[28px] flex justify-between items-center px-7 h-[130px]"
                             >
                                 <div>
-                                    <div class="font-medium text-[22px] text-white">
+                                    <div className="font-medium text-[22px] text-white">
                                         {name}
                                     </div>
-                                    <p class="mb-0 text-white text-sm font-light">
+                                    <p className="mb-0 text-white text-sm font-light">
                                         {category}
                                     </p>
                                 </div>
-                                <div class="translate-x-[100px] group-hover:translate-x-0 transition ease-in-out duration-500">
+                                <div className="translate-x-[100px] group-hover:translate-x-0 transition ease-in-out duration-500">
                                     <img
                                         src="/icons/ic_play.svg"
                                         width="50"
@@ -54,8 +54,8 @@ export default function FeaturedMovie ({
                                 </div>
                             </div>
                             <Link
-                                href={route('prototype.movie.show', slug)}
-                                class="inset-0 absolute z-50"
+                                href={route('user.dashboard.movie.show', slug)}
+                                className="inset-0 absolute z-50"
                             ></Link>
                         </div>
     );

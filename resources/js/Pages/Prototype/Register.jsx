@@ -2,6 +2,8 @@ import TextInput from "@/Components/TextInput";
 import InputLabel from "@/Components/InputLabel";
 import PrimaryButton from "@/Components/PrimaryButton";
 import { Link, Head } from "@inertiajs/inertia-react";
+import "./../../../css/input.css";
+import "./../../../css/button.css";
 
 export default function Register() {
     return (

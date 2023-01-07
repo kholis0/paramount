@@ -1,11 +1,11 @@
 import { Link } from "@inertiajs/inertia-react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
-MovieCard.PropTypes = {
-    slug: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-    thumbnail: PropTypes.string.isRequired,
+MovieCard.propTypes = {
+    slug: propTypes.string.isRequired,
+    name: propTypes.string.isRequired,
+    category: propTypes.string.isRequired,
+    thumbnail: propTypes.string.isRequired,
 };
 
 export default function MovieCard({ slug, name, category, thumbnail }) {
@@ -31,7 +31,7 @@ export default function MovieCard({ slug, name, category, thumbnail }) {
                 <img src="/icons/ic_play.svg" className="" width="50" alt="" />
             </div>
             <Link
-                href={route('prototype.movie.show', slug)}
+                href={route('user.dashboard.movie.show', slug)}
                 className="inset-0 absolute z-50"
             ></Link>
         </div>
